@@ -5,7 +5,9 @@ This is the code to the paper
 [**"CertainSAM: Fast and Efficient Uncertainty Quantification in the Segment Anything Model"**](ARXIV_LINK_SOME_DAY) 
 by Anonymous Authors
 which is submitted to the ICML25 double-blind review process.
-Please do not distribute
+
+
+**Please do not distribute!**
 
 
 <p align="center">
