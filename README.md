@@ -9,7 +9,7 @@ Please do not distribute
 
 
 <p align="center">
-<img src="assets/teaser.png"  width="1890" height="695">
+<img src="assets/teaser.png">
 </p>
 
 The introduction of the Segment Anything Model
@@ -29,7 +29,7 @@ tradeoff between accuracy and cost efficiency.
 
 
 <p align="center">
-<img src="assets/framework.png"  width="1929" height="583">
+<img src="assets/framework.png">
 </p>
 
 
