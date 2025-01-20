@@ -42,7 +42,7 @@ tradeoff between accuracy and cost efficiency.
 Installing this repository will provide you with the following features:
 - Fast and efficient patch of SAM2 for uncertainty quantification
 - Simple and intuitive demonstrator to visualize uncertainty in a video stream
-- Training scripts to retrain the model
+- Training scripts to retrain the model (will be added soon!)
 
 **Important Note:** 
 The current version only supports the SAM2.0 model. 
@@ -64,7 +64,7 @@ conda env create -f environment.yml
 We tested the installation on Linux Opensuse-leap 15.6 and Windows 10 with Python 3.10.
 
 
-Our repository is build ono the SAM2 repository. Thus, install SAM2.0 from the 
+Our repository is build on the SAM2 repository. Thus, install SAM2.0 from the 
 official repository [here](https://github.com/facebookresearch/sam2).
 
 ````shell
