@@ -138,11 +138,15 @@ with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
 
 ### Demo
 
-You can run our demo to visualize the uncertainty in a video stream:
+<p align="center">
+<img src="assets/demo.png">
+</p>
+
+You can run our USAM demo to visualize the uncertainty estimation in real-time:
 ```shell
 python scripts/demo.py
 ```
-To modify the script, please open the python see the script for further information.
+To modify the script, please see the script for further information.
 
 ### Training
 
