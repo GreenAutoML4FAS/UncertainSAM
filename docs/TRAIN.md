@@ -63,7 +63,7 @@ data
 **Note:**
 
 - The DAVIS dataset can be downloaded from [here](https://davischallenge.org/davis2017/code.html#unsupervised). We used the full resolution dataset.
-- If you have the download-link list for the SAV datasets, we provide the download script [download_sav.py](data/download_sav.py) that can be used to automatically download the datasets.
+- If you have the download-link list for the SAV datasets, we provide the download script [download_sav.py](../data/download_sav.py) that can be used to automatically download the datasets.
 
 
 
