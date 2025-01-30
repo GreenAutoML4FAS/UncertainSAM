@@ -265,37 +265,6 @@ def forward(
     return masks, iou_pred, sam_tokens_out, object_score_logits
 
 
-# def attention_forward(self, q: Tensor, k: Tensor, v: Tensor) -> Tensor:
-#     # Input projections
-#     q = self.q_proj(q)
-#     k = self.k_proj(k)
-#     v = self.v_proj(v)
-#
-#     # Separate into heads
-#     q = self._separate_heads(q, self.num_heads)
-#     k = self._separate_heads(k, self.num_heads)
-#     v = self._separate_heads(v, self.num_heads)
-#
-#     dropout_p = self.dropout_p if self.training else 0.0
-#     # Read out environment variable "DROPOUT_P" to set dropout_p
-#     if "DROPOUT_P" in os.environ:
-#         dropout_p = float(os.environ["DROPOUT_P"])
-#
-#     # Attention
-#     with torch.backends.cuda.sdp_kernel(
-#             enable_flash=USE_FLASH_ATTN,
-#             # if Flash attention kernel is off, then math kernel needs to be enabled
-#             enable_math=(OLD_GPU and dropout_p > 0.0) or MATH_KERNEL_ON,
-#             enable_mem_efficient=OLD_GPU,
-#     ):
-#         out = F.scaled_dot_product_attention(q, k, v, dropout_p=dropout_p)
-#
-#     out = self._recombine_heads(out)
-#     out = self.out_proj(out)
-#
-#     return out
-
-
 def patch_sam2(instance, model_dir=None):
     """ Patches Sam2 to predict uncertainty quantification methods """
     if isinstance(instance, SAM2ImagePredictor):
@@ -330,8 +299,30 @@ def patch_sam2(instance, model_dir=None):
                 instance.regression_models[model] = mlp
                 instance.scores[model] = None
 
-    # # list all nn.Module in the instance
-    # modules = instance.named_modules()
-    # for name, module in modules:
-    #     if isinstance(module, Attention):
-    #         module.forward = types.MethodType(attention_forward, module)
+
+def read_mask_tokens(instance):
+    """ Reads mask token from the sam2 instance."""
+    if isinstance(instance, SAM2ImagePredictor):
+        mask_tokens_out = instance.model.sam_mask_decoder.mask_tokens_out
+    elif isinstance(instance, SAM2Base):
+        mask_tokens_out = instance.sam_mask_decoder.mask_tokens_out
+    else:
+        raise ValueError(f"Unknown instance type: {type(instance)}")
+    return mask_tokens_out
+
+
+def read_iou_token(instance):
+    """ Reads iou token from the sam2 instance."""
+    if isinstance(instance, SAM2ImagePredictor):
+        iou_token_out = instance.model.sam_mask_decoder.iou_token_out
+    elif isinstance(instance, SAM2Base):
+        iou_token_out = instance.sam_mask_decoder.iou_token_out
+    else:
+        raise ValueError(f"Unknown instance type: {type(instance)}")
+    return iou_token_out
+
+
+def check_if_token_set(instance):
+    """ Checks if mask and iou tokens are set in the sam2 instance."""
+    mask_tokens_out = read_mask_tokens(instance)
+    return mask_tokens_out is not None

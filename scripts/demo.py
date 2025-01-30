@@ -21,7 +21,7 @@ def load_args():
     parser.add_argument(
         "--model_cfg",
         type=str,
-        default=join(sam2_root, "configs", "sam2", "sam2_hiera_t.yaml"),
+        default=join(root, "models", "sam", "configs_2.0", "sam2_hiera_t.yaml"),
         help="Path to the model config")
     parser.add_argument(
         "--checkpoint",
@@ -78,7 +78,7 @@ def show_image(image, mask, mlp_scores):
         cv2.putText(image, f"{key}: {float(score):.2f}", (10, 30 + 20 * i), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
 
     # Draw headline
-    cv2.putText(image, "CertainSAM", (256, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+    cv2.putText(image, "UncertainSAM", (256, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
     cv2.imshow("image", image)
     key = cv2.waitKey(1)
