@@ -77,8 +77,6 @@ cd models/sam/checkpoints_2.0
 cd ../checkpoints_2.1
 ./download_ckpts.sh
 ```
-**Note that** the respective model configs can be found in the SAM2 repository.
-Until now, only the SAM2.0 models are supported!
 
 You can verify the sam2 installation by running the following command:
 ```shell
@@ -121,11 +119,11 @@ from sam2.sam2_image_predictor import SAM2ImagePredictor
 
 from usam.patch_sam2 import patch_sam2
 
-checkpoint = "./models/sam/checkpoints_2.0/sam2_hiera_large.pt"
-model_cfg = "${SAM_DIRECTORY}/configs/sam2/sam2_hiera_l.yaml"
+checkpoint = "./models/sam/checkpoints_2.1/sam2.1_hiera_large.pt"
+model_cfg = "${SAM_DIRECTORY}/configs/sam2.1/sam2.1_hiera_l.yaml"
 predictor = SAM2ImagePredictor(build_sam2(model_cfg, checkpoint))
 
-mlp_directory = "./models/mlps/sam2.0"
+mlp_directory = "./models/mlps/sam2.1"
 predictor = patch_sam2(predictor, mlp_directory)
 
 with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):

@@ -21,17 +21,17 @@ def load_args():
     parser.add_argument(
         "--model_cfg",
         type=str,
-        default=join(root, "models", "sam", "configs_2.0", "sam2_hiera_t.yaml"),
+        default=join(root, "models", "sam", "configs_2.1", "sam2.1_hiera_t.yaml"),
         help="Path to the model config")
     parser.add_argument(
         "--checkpoint",
         type=str,
-        default=join(root, "models", "sam", "checkpoints_2.0", "sam2_hiera_tiny.pt"),
+        default=join(root, "models", "sam", "checkpoints_2.1", "sam2.1_hiera_tiny.pt"),
         help="Path to the checkpoint")
     parser.add_argument(
         "--mlp-dir",
         type=str,
-        default=join(root, "models", "mlps", "sam2.0"),
+        default=join(root, "models", "mlps", "sam2.1"),
         help="Path to the MLP directory")
     parser.add_argument(
         "--camera",
