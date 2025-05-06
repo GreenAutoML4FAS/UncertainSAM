@@ -4,11 +4,8 @@
 
 This is the code to the paper 
 [**"UncertainSAM: Fast and Efficient Uncertainty Quantification of the Segment Anything Model"**](ARXIV_LINK_SOME_DAY) 
-by Anonymous Authors
-which is submitted to the ICML25 double-blind review process.
-
-
-**Please do not distribute!**
+by Timo Kaiser, Thomas Norrenbrock, and Bodo Rosenhahn. 
+The paper is accepted at the ICML 25.
 
 
 <p align="center">
@@ -32,13 +29,7 @@ Installing this repository will provide you with the following features:
 - Simple and intuitive demonstrator to visualize uncertainty in a video stream
 - Training scripts to retrain the model 
 
-**Important Note:** 
-The current version only supports the SAM2.0 model. 
-We are currently training models for SAM2.1.
-This repository is a research prototype and is not intended for production use. 
-Please use it at your own risk. 
-We will do our best to maintain the code and fix issues, 
-but we cannot provide any support for it.
+
 
 ---
 
@@ -62,7 +53,7 @@ pip install -e ".[notebooks]"
 
 Then, clone this repository and install it:
 ```shell
-git clone TO_BE_ADDED_AFTER_PUBLICATION
+git clone https://github.com/GreenAutoML4FAS/UncertainSAM
 cd UncertainSAM
 pip install -e .
 ```
@@ -159,12 +150,13 @@ for further information.
 If you use this code in your research, please cite the following paper:
 
 ```
-@article{,
-  title={},
-  author={},
-  journal={},
-  year={},
-  publisher={}
+@inproceedings{
+    anonymous2025uncertainsam,
+    title={Uncertain{SAM}: Fast and Efficient Uncertainty Quantification of the Segment Anything Model},
+    author={Anonymous},
+    booktitle={Forty-second International Conference on Machine Learning},
+    year={2025},
+    url={https://openreview.net/forum?id=G3j3kq7rSC}
 }
 ```
 
