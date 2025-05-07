@@ -153,7 +153,7 @@ If you use this code in your research, please cite the following paper:
 @inproceedings{
     anonymous2025uncertainsam,
     title={Uncertain{SAM}: Fast and Efficient Uncertainty Quantification of the Segment Anything Model},
-    author={Anonymous},
+    author={Timo Kaiser, Thomas Norrenbrock, and Bodo Rosenhahn},
     booktitle={Forty-second International Conference on Machine Learning},
     year={2025},
     url={https://openreview.net/forum?id=G3j3kq7rSC}
