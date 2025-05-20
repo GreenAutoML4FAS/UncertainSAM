@@ -79,7 +79,7 @@ python scripts/verify_usam_installation.py
 ```
 
 **Known Issues:**
-- Make sure that the sam2 repository is not in your working directory when you run the scripts. My you need to add it to the PYTHONPATH if its not found!
+- Make sure that the sam2 repository is not in your working directory when you run the scripts. May you need to add it to the PYTHONPATH if its not found!
 - SAM installs a specific version of opencv that does not support imshow, necessary to run the demo tool. To fix it, uninstall opencv via pip and reinstall the default opencv repository with pip.
 ---
 
