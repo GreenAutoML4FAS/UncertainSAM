@@ -4,6 +4,7 @@
 
 ![Static Badge](https://img.shields.io/badge/ArXiv-2505.05049-red?style=flat&label=ArXiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2505.05049)
 ![Static Badge](https://img.shields.io/badge/ICML-OpenReview-blue?style=flat&label=ICML&link=https%3A%2F%2Fopenreview.net%2Fforum%3Fid%3DG3j3kq7rSC)
+![Static Badge](https://img.shields.io/badge/Project_Page-green?style=flat&label=Github.io&link=https%3A%2F%2Fgreenautoml4fas.github.io%2FUncertainSAM%2F)
 
 ---
 
