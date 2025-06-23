@@ -3,10 +3,18 @@
 </div>
 
 <div align="center"> 
-<img alt="Static Badge" src="https://img.shields.io/badge/ArXiv-2505.05049-red?style=flat&label=ArXiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2505.05049">
-<img alt="Static Badge" src="https://img.shields.io/badge/ICML-OpenReview-blue?style=flat&label=ICML&link=https%3A%2F%2Fopenreview.net%2Fforum%3Fid%3DG3j3kq7rSC">
-<img alt="Static Badge" src="https://img.shields.io/badge/Project_Page-green?style=flat&label=Github.io&link=https%3A%2F%2Fgreenautoml4fas.github.io%2FUncertainSAM%2F">
-<img alt="Static Badge" src="https://img.shields.io/badge/GitHub-Code-yellow?style=flat&link=https%3A%2F%2Fgithub.com%2FGreenAutoML4FAS%2FUncertainSAM">
+<a href="https://arxiv.org/abs/2505.05049">
+  <img src="https://img.shields.io/badge/ArXiv-2505.05049-red?style=flat&label=ArXiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2505.05049" alt="Static Badge" />
+</a>
+<a href="https://openreview.net/forum?id=G3j3kq7rSC">
+  <img src="https://img.shields.io/badge/ICML-OpenReview-blue?style=flat&label=ICML&link=https%3A%2F%2Fopenreview.net%2Fforum%3Fid%3DG3j3kq7rSC" alt="Static Badge" />
+</a>
+<a href="https://greenautoml4fas.github.io/UncertainSAM/">
+  <img src="https://img.shields.io/badge/Project_Page-green?style=flat&label=Github.io&link=https%3A%2F%2Fgreenautoml4fas.github.io%2FUncertainSAM%2F" alt="Static Badge" />
+</a>
+<a href="https://github.com/GreenAutoML4FAS/UncertainSAM">
+  <img src="https://img.shields.io/badge/GitHub-Code-yellow?style=flat&link=https%3A%2F%2Fgithub.com%2FGreenAutoML4FAS%2FUncertainSAM" alt="Static Badge" />
+</a>
 </div>
 
 ---
