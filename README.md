@@ -18,14 +18,14 @@ The paper is accepted at the ICML 25.
 
 
 <p align="center">
-<img src="assets/teaser.png">
+<img src="docs/assets/teaser.png">
 </p>
 
 The introduction of the Segment Anything Model (SAM) has paved the way for numerous semantic segmentation applications. For several tasks, quantifying the uncertainty of SAM is of particular interest. However, the ambiguous nature of the class-agnostic foundation model SAM challenges current uncertainty quantification (UQ) approaches. This paper presents a theoretically motivated uncertainty quantification model based on a Bayesian entropy formulation jointly respecting aleatoric, epistemic, and the newly introduced task uncertainty. We use this formulation to train USAM, a lightweight post-hoc UQ method. Our model traces the root of uncertainty back to under-parameterised models, insufficient prompts or image ambiguities. Our proposed deterministic USAM demonstrates superior predictive capabilities on the SA-V, MOSE, ADE20k, DAVIS, and COCO datasets, offering a computationally cheap and easy-to-use UQ alternative that can support user-prompting, enhance semi-supervised pipelines, or balance the tradeoff between accuracy and cost efficiency.
 
 
 <p align="center">
-<img src="assets/framework.png">
+<img src="docs/assets/framework.png">
 </p>
 
 
@@ -137,7 +137,7 @@ with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
 ### Demo
 
 <p align="center">
-<img src="assets/demo.png">
+<img src="docs/assets/demo.png">
 </p>
 
 You can run our USAM demo to visualize the uncertainty estimation in real-time:

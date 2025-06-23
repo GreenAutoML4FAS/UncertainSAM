@@ -11,18 +11,49 @@
 
 ---
 
-<p align="center">
-<img src="assets/teaser.png">
-</p>
-
 <p style="font-style: italic; font-family: monospace; background-color: #f0f0f0; padding: 10px; display: inline-block;">
 The introduction of the Segment Anything Model (SAM) has paved the way for numerous semantic segmentation applications. For several tasks, quantifying the uncertainty of SAM is of particular interest. However, the ambiguous nature of the class-agnostic foundation model SAM challenges current uncertainty quantification (UQ) approaches. This paper presents a theoretically motivated uncertainty quantification model based on a Bayesian entropy formulation jointly respecting aleatoric, epistemic, and the newly introduced task uncertainty. We use this formulation to train USAM, a lightweight post-hoc UQ method. Our model traces the root of uncertainty back to under-parameterised models, insufficient prompts or image ambiguities. Our proposed deterministic USAM demonstrates superior predictive capabilities on the SA-V, MOSE, ADE20k, DAVIS, and COCO datasets, offering a computationally cheap and easy-to-use UQ alternative that can support user-prompting, enhance semi-supervised pipelines, or balance the tradeoff between accuracy and cost efficiency.
 </p>
 
+---
+Method
 
 <p align="center">
 <img src="assets/framework.png">
 </p>
+
+Training Objectives
+<p align="center">
+<img src="assets/training_objectives.png">
+</p>
+
+
+Samples
+
+<p align="center">
+<img src="assets/teaser.png">
+</p>
+
+Ablation
+<p align="center">
+<img src="assets/ablation.png">
+</p>
+
+Correlation
+<p align="center">
+<img src="assets/correlation.png">
+</p>
+
+Experiments
+<p align="center">
+<img src="assets/evaluation.png">
+</p>
+
+Runtime
+<p align="center">
+<img src="assets/runtime.png">
+</p>
+
 
 
 ---
