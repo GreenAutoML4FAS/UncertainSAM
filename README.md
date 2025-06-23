@@ -1,5 +1,5 @@
 <div align="center"> 
-    <h1> UncertainSAM</h1>
+    <h1> UncertainSAM: Fast and Efficient Uncertainty Quantification of the Segment Anything Model</h1>
 </div>
 
 ![Static Badge](https://img.shields.io/badge/ArXiv-2505.05049-red?style=flat&label=ArXiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2505.05049)
