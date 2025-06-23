@@ -19,7 +19,7 @@ checkpoint = join(root, "models", "sam", "checkpoints_2.0", "sam2_hiera_tiny.pt"
 mlp_dir = join(root, "models", "mlps", "sam2.0")
 
 # Load image
-image = Image.open(join(root, "assets", "dog_sample.png"))
+image = Image.open(join(root, "docs", "assets", "dog_sample.png"))
 image = np.array(image.convert("RGB"))
 
 # Load predictor

@@ -16,7 +16,7 @@ model_cfg = join(sam2_root, "configs", "sam2", "sam2_hiera_t.yaml")
 checkpoint = join(root, "models", "sam", "checkpoints_2.0", "sam2_hiera_tiny.pt")
 
 # Load image
-image = Image.open(join(root, "assets", "dog_sample.png"))
+image = Image.open(join(root, "docs", "assets", "dog_sample.png"))
 image = np.array(image.convert("RGB"))
 
 # Load predictor
